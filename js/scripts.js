@@ -1,9 +1,8 @@
 
 
- function Pizza(toppings, size){
-   this.toppings = toppings;
-   this.size=size;
- }
+ function Pizza(size){}
+   this.size = size;
+   this.toppings = [];
+ };
 
  var original = new Pizza('jalepeno', medium)
- var spicy = new Pizza('habenero', large)
