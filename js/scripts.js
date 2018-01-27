@@ -1,5 +1,9 @@
-//constructor function, pizza object, size and toppings as properties
-function Pizza(size,toppings) {
-  this.pizzaSize = size;
-  this.pizzaTops = toppings;
-}
+
+
+ function Pizza(toppings, size){
+   this.toppings = toppings;
+   this.size=size;
+ }
+
+ var original = new Pizza('jalepeno', medium)
+ var spicy = new Pizza('habenero', large)
