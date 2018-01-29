@@ -1,13 +1,10 @@
 //Business
-var size;
-var toppings;
-
 function Pizza(size) {
   this.size = size;
   this.toppings = toppings;
 };
 
-Pizza.prototype.cost = function() {
+Pizza.prototype.cost = function(){
   var cost = 15;
 }
 
@@ -25,24 +22,27 @@ Pizza.prototype.cost = function() {
     cost *= .05
   } else {
     cost *= 1;
-  };
-return cost;
+  }
+  console.log(this.cost)
+
+
+var pickSize;
+var pickToppings;
+Pizza();
 
 //UI
 $("document").ready(function(){
-  $("form#order-form").submit(function(event){
+  $("form#enter-order").submit(function(event){
     event.preventDefault();
 
-    var inputtedPizzaSize = $(this).find("select#pizza-size").val();;
+    var inputtedPizzaSize = $(this).find("select#pizza-size").val();
     var newPizza = new Pizza(inputtedPizzaSize, inputtedPizzaToppings);
 
       $("#pizza-toppings").each(function() {
         newPizza.pizzatoppings.push($(this).val());
 
-  $("#enter-order").lastclick(function() {
-  $("#your-order-details").show();
+
+  $(".total-due").show();
   $("#pizza-size").text(newPizza.pizzasize);
   $("#pizza-toppings").text(newPizza.pizzatoppings);
-  $("#total-due").show(newPizza.cost());
-
 });
