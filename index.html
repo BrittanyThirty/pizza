@@ -32,41 +32,31 @@
         </div>
       </div>
       <div class="container">
+        <h2>Select Your Toppings</h2>
         <div class="row">
-          <div class="col-md-6">
-            <h2>Select Your Toppings</h2>
-                <input type="checkbox" class="toppings" id="Jalepeno">
-                <label for="toppings-jalepeno">Jalepeno</label>
-                <input type="checkbox" class="toppings" id="Pineapple">
-                <label for="toppings-pineapple">Pineapple</label>
-                <input type="checkbox" class="toppings" id="Spicy Sausage">
-                <label for="toppings-spicy">Spicy Sausage</label>
-                <input type="checkbox" class="toppings" id="Extra-Cheese">
-                <label for="toppings-extra">Extra Cheese</label>
+         <div id="picktopping">
+                <input type="checkbox" class="toppings" value=""="Jalepeno">Jalepeno</input>
+                <input type="checkbox" class="toppings" value="Pineapple">Pineapple</input>
+                <input type="checkbox" class="toppings" value="Spicy Sausage">Spicy Sausage</input>
+                <input type="checkbox" class="toppings" value="Extra-Cheese">Extra Cheese</input>
             </div>
             <div class="container">
-              <h4>Enter your Delivery Address:</h4>
               <div class="row">
                 <div class="col-md-6">
                   <h2>Enter your Delivery Address:</h2>
                   <form id="new-contact">
                     <div class="form-group">
-                      <label for="new-first-name">First name</label>
-                      <input type="text" class="form-control" id="new-first-name">
+                      <input type="text" class="form-control" id="new-first-name">First name</input>
                     </div>
                     <div class="form-group">
-                      <label for="new-last-name">Last name</label><br>
-                      <input type="text" class="form-control" id="new-last-name">
+                      <input type="text" class="form-control" id="new-last-name">Last name</input><br>
                     </div>
                     <div id="new-addresses">
-                      <div class="new-address">
-                        <div class="form-group">
                           <label for="new-street">Street</label><br>
                           <input type="text" class="form-control new-street">
                         </div>
                         <div class="form-group">
-                          <label for="new-city">City</label><br>
-                          <input type="text" class="form-control new-city">
+                          <input type="text" class="form-control new-city">City</input><br>
                         </div>
                         <div class="form-group">
                           <label for="new-state">State</label><br>
@@ -75,20 +65,15 @@
                       </div>
                     </div>
                   </div>
+              <div class="container">
+                <div id="your-order-details">
+                  <h6>All Set?</h6>
+                  <h5>Your Order Total is:<span class="total-due"></span></h5>
+                  <p><em>Your Toppings:</em><span class="pizza-toppings"></span></p>
                 </div>
               </div>
-              <div class="container">
-                <ul id="your-order-details">
-                  <h5>Your Order Total is:<span class="total-due"></span></h5>
-                  <p>Your Pizza Size:<span class="pizza-size"></span></p><br>
-                  <p><em>Your Toppings:</em><span class="pizza-toppings"></span></p>
-                  <br>
-                  <h5>All Set?</h5>
-                  <li>Thank you for choosing<strong>Homeslice!</strong>Submit your order and we'll get there in a jiffy!</li>
-                </ul>
-              </div>
-              <button type="button" class="btn btn-lg btn-primary" id="enter-order">Order Now!</button>
-        </form>
+              <button type="button" class="btn btn-lg btn-primary" id="submit">Order Now!</button>
+         </form>
         </form>
     </body>
 </html>
