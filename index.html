@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>Homeslice</title>
 </head>
@@ -27,8 +27,8 @@
         <div class="row">
           <div class="col-md-6">
             <h2>Select a Size</h2>
-            <label for="super-size">Pick Your Pie:</label>
-            <select class="form-control" id="super-size">
+            <label for="pizza-size">Pick Your Pie:</label>
+            <select class="form-control" id="pizza-size">
               <option value="medium">Personal</option>
               <option value="medium">Medium</option>
               <option value="large">Large</option>
@@ -40,16 +40,13 @@
         <div class="row">
           <div class="col-md-6">
             <h2>Select Your Toppings</h2>
-            <div class="form-group">
-              <form id= "order-form">
-                //remove inline change from horizontal to long form att # fig in arr? att cost arr length? more top choice? contact style log first
-                <input type="checkbox" name="toppings" value="Jalepeno" id="1">
+                <input type="checkbox" name="toppings" id="Jalepeno">
                 <label for="toppings-jalepeno">Jalepeno</label>
-                <input type="checkbox" name="toppings" value="Pineapple" id="1">
+                <input type="checkbox" name="toppings" id="Pineapple">
                 <label for="toppings-pineapple">Pineapple</label>
-                <input type="checkbox" name="toppings" value="Spicy Sausage" id="1">
+                <input type="checkbox" name="toppings" id="Spicy Sausage">
                 <label for="toppings-spicy">Spicy Sausage</label>
-                <input type="checkbox" name="toppings" value="Extra Cheese" id="1">
+                <input type="checkbox" name="toppings" id="Extra-Cheese">
                 <label for="toppings-extra">Extra Cheese</label>
               </form>
             </div>
@@ -57,31 +54,31 @@
             <br>
             <br>
             <div class="container">
-              <h4>Enter your Delivery Address: <</h4>
+              <h4>Enter your Delivery Address:</h4>
               <div class="row">
                 <div class="col-md-6">
-                  <h2>Enter your Delivery Address: </h2>
+                  <h2>Enter your Delivery Address:</h2>
                   <form id="new-contact">
                     <div class="form-group">
                       <label for="new-first-name">First name</label>
                       <input type="text" class="form-control" id="new-first-name">
                     </div>
                     <div class="form-group">
-                      <label for="new-last-name">Last name</label>
+                      <label for="new-last-name">Last name</label><br>
                       <input type="text" class="form-control" id="new-last-name">
                     </div>
                     <div id="new-addresses">
                       <div class="new-address">
                         <div class="form-group">
-                          <label for="new-street">Street</label>
+                          <label for="new-street">Street</label><br>
                           <input type="text" class="form-control new-street">
                         </div>
                         <div class="form-group">
-                          <label for="new-city">City</label>
+                          <label for="new-city">City</label><br>
                           <input type="text" class="form-control new-city">
                         </div>
                         <div class="form-group">
-                          <label for="new-state">State</label>
+                          <label for="new-state">State</label><br>
                           <input type="text" class="form-control new-state">
                         </div>
                       </div>
@@ -90,12 +87,17 @@
                 </div>
               </div>
               <div class="container">
-                <div id="order-confirm">
-                  <h5>Order Confirmation</h5>
-                  <p>Thank you for choosing Homeslice! We'll see you about an hour after you submit your order!</p>
-                  <h5><span class="total-due">Total Due:</span></h5>
+                <div id="your-order-details">
+                  <h5>All Set?</h5>
+                  <label>You<span class="pizza-size">Ordered A:</span></label><br>
+                  <label><span class="pizza-toppings">With:</span></label>
+                  <br>
+                  <h5><span class="total-due">Your Order Total is: </span></h5>
+                  <br>
+                  <p>Thank you for choosing Homeslice! Submit your order and we'll get there in a jiffy!</p>
                 </div>
-                <button type="submit" class="btn btn success">
+              </div>
+              <button type="button" class="btn btn-lg btn-primary">Order Now!</button>
                 </form>
               </body>
               </html>
