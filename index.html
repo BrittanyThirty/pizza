@@ -36,12 +36,17 @@
             <h2>Select Your Toppings</h2>
             <div class="form-group">
               <form id= "order-form">
-                  <input type="radio" name="toppings" id="Jalepeno" value="Jalepeno">
-                  <label class="radio-inline"></label>
-                  <input type="radio" name="toppings" id="Jalepeno" value="Jalepeno">
-                  <label class="radio-inline"></label>
-                  <input type="radio" name="toppings" id="Jalepeno" value="Jalepeno">
-                  <label class="radio-inline"></label>
+                //remove inline change from horizontal to long form att # fig in arr? att cost arr length? more top choice? contact style log first
+                  <input type="checkbox" name="toppings" value="Jalepeno" id="1">
+                  <label for="toppings-jalepeno">Jalepeno</label>
+                  <input type="checkbox" name="toppings" value="Pineapple" id="1">
+                  <label for="toppings-pineapple">Pineapple</label>
+                  <input type="checkbox" name="toppings" value="Spicy Sausage" id="1">
+                  <label for="toppings-spicy">Spicy Sausage</label>
+                  <input for="checkbox" name="toppings" value="Pepperoni" id="1">
+                  <label for="toppings-pepp">Pepperoni</label>
+                  <input type="checkbox" name="toppings" value="Extra Cheese" id="1">
+                  <label for="toppings-extra">Extra Cheese</label>
                 </form>
               </div>
                   <br>
@@ -79,6 +84,11 @@
                           </div>
                           </div>
                         </div>
+                      </div>
+                      <div class="container">
+                        <div id="order-confirm">
+                        <h5>Order Confirmation and Total Due:</h5>
+                        <p>Thank you for choosing Homeslice! We'll see you about an hour after you submit your order!</p>
                       </div>
                             </form>
                               <button type="submit" class="btn btn success">
