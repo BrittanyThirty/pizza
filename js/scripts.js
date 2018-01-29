@@ -4,18 +4,27 @@
    this.toppings = [];
  };
 
-Pizza.prototype = function() {
+Pizza.prototype.cost = function() {
   var cost = 15;
 }
   if(this.size === "Personal") {
-    cost =* 1;
+    cost *= 1;
   } else if(this.size === "Medium") {
     cost *= 2;
   } else {
     cost *= 2.5;
   }
 
-if(this.toppings === )
+if(this.toppings.length === 0) {
+  cost *= 1;
+} else {
+  cost += this.toppings.length;
+}
+
+return cost;
+
+};
+
 
 
 
