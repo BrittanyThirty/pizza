@@ -2,7 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
@@ -29,7 +30,7 @@
             <h2>Select a Size</h2>
             <label for="pizza-size">Pick Your Pie:</label>
             <select class="form-control" id="pizza-size">
-              <option value="medium">Personal</option>
+              <option value="personal">Personal</option>
               <option value="medium">Medium</option>
               <option value="large">Large</option>
             </select>
@@ -40,14 +41,15 @@
         <div class="row">
           <div class="col-md-6">
             <h2>Select Your Toppings</h2>
-                <input type="checkbox" name="toppings" id="Jalepeno">
+                <input type="checkbox" class="toppings" id="Jalepeno">
                 <label for="toppings-jalepeno">Jalepeno</label>
-                <input type="checkbox" name="toppings" id="Pineapple">
+                <input type="checkbox" class="toppings" id="Pineapple">
                 <label for="toppings-pineapple">Pineapple</label>
-                <input type="checkbox" name="toppings" id="Spicy Sausage">
+                <input type="checkbox" class="toppings" id="Spicy Sausage">
                 <label for="toppings-spicy">Spicy Sausage</label>
-                <input type="checkbox" name="toppings" id="Extra-Cheese">
+                <input type="checkbox" class="toppings" id="Extra-Cheese">
                 <label for="toppings-extra">Extra Cheese</label>
+          </form>
               </form>
             </div>
             <br>
@@ -87,17 +89,16 @@
                 </div>
               </div>
               <div class="container">
-                <div id="your-order-details">
+                <ul id="your-order-details">
+                  <h5>Your Order Total is:<span class="total-due"></span></h5>
+                  <p>Your Pizza Size:<span class="pizza-size"></span></p><br>
+                  <p><em>Your Toppings:</em><span class="pizza-toppings"></span></p>
+                  <br>
                   <h5>All Set?</h5>
-                  <label>You<span class="pizza-size">Ordered A:</span></label><br>
-                  <label><span class="pizza-toppings">With:</span></label>
-                  <br>
-                  <h5><span class="total-due">Your Order Total is: </span></h5>
-                  <br>
-                  <p>Thank you for choosing Homeslice! Submit your order and we'll get there in a jiffy!</p>
-                </div>
+                  <li>Thank you for choosing<strong>Homeslice!</strong>Submit your order and we'll get there in a jiffy!</li>
+                </ul>
               </div>
-              <button type="button" class="btn btn-lg btn-primary">Order Now!</button>
-                </form>
-              </body>
-              </html>
+              <button type="button" class="btn btn-lg btn-primary" id="enter-order">Order Now!</button>
+        </form>
+    </body>
+</html>

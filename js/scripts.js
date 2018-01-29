@@ -1,6 +1,10 @@
+//Business
+var size;
+var toppings;
+
 function Pizza(size) {
   this.size = size;
-  this.toppings = [];
+  this.toppings = toppings;
 };
 
 Pizza.prototype.cost = function() {
@@ -15,26 +19,30 @@ Pizza.prototype.cost = function() {
     cost *= 2.5;
   }
 
-  if(this.toppings.length === 0) {
-    cost *= 1;
+  if(this.toppings >= 2) {
+    cost *= .07;
+  } else if (this.toppings === 1) {
+    cost *= .05
   } else {
-    cost += this.toppings.length;
-  }
-
+    cost *= 1;
   };
+return cost;
 
-
-
-
-$(function() {
+//UI
 $("document").ready(function(){
   $("form#order-form").submit(function(event){
     event.preventDefault();
 
+    var inputtedPizzaSize = $(this).find("select#pizza-size").val();;
+    var newPizza = new Pizza(inputtedPizzaSize, inputtedPizzaToppings);
 
-    var inputtedPizzaSize = $("select#pizza-size").val();
-    var newPizza = new Pizza (inputtedPizzaSize);
+      $("#pizza-toppings").each(function() {
+        newPizza.pizzatoppings.push($(this).val());
 
+  $("#enter-order").lastclick(function() {
+  $("#your-order-details").show();
+  $("#pizza-size").text(newPizza.pizzasize);
+  $("#pizza-toppings").text(newPizza.pizzatoppings);
+  $("#total-due").show(newPizza.cost());
 
-  }
 });
