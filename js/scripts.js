@@ -3,12 +3,11 @@ function Pizza(size,toppings) {
   this.size = size;
   this.toppings = toppings;
 }
-var price = 15;
+  var price = 15;
 Pizza.prototype.price = function() {
-};
-  if(this.size === "personal") {
+  if(this.size === "personal"){
     price *= 1;
-  } else if (this.size === "medium") {
+  } else if (this.size === "medium"){
     price *= 2;
   } else {
     price *= 2.5;
@@ -20,25 +19,30 @@ Pizza.prototype.price = function() {
     } else {
       price *= 1;
     };
- // return Pizza.price ();
+      return Pizza.price ();
+};
 
 
 // //UI
 $(document).ready(function(){
+  $('.submit#button_id').submit(function() {
+    alert("test");
+  // $("form#submit").click(function(){
+    event.preventDefault();
 
-$("form#submit").click(function(){
-  event.preventDefault();
+});
 })
-})
+
 var yourPizza = new Pizza(pickSize, pickToppings);
 var pickSize = $("pizza-size").val();
 var pickToppings = [];
 
-//
-//     $('input[name="toppings"]:checked').each(function() {
-//       pickSize.push($(this.total));
-//       // $("#pick-size").append("<li>"+ this.total + "</li>"){
+// console.log("it works!");
+    $('input[name="toppings"]:checked').each(function() {
+      pickSize.push($(this.total));
+
+      // $("#pick-size").append("<li>"+ this.total + "</li>"){
 //  $(".total-due").text(yourPizza)
-//  $(".pizza-size").text(new Pizza),
-// });
-    // });
+//  $(".pizza-size").text(new Pizza);
+// // });
+    });
