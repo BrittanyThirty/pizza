@@ -9,46 +9,46 @@
   <title>Homeslice</title>
 </head>
 <body>
-    <div class="container">
-      <h2>Sizing options include:</h2>
-        <ul id="picksize">
-          <li>Persona|$15</li>
-          <li>Medium|$30</li>
-          <li>Large|$37.50</li>
-        </ul>
+  <div class="container">
+    <h2>Sizing options include:</h2>
+    <ul id="pick-size">
+      <li>Personal | $15</li>
+      <li>Medium | $30</li>
+      <li>Large | $37.50</li>
+    </ul>
+  </div>
+<div class="container">
+  <div class="form-group">
+    <form id="order-form">
+        <h2>Select a Size</h2>
+      <label for="pizza-size">Pick Your Pie:</label>
+      <div class="form-control" id="pizza-size">
+      <select class="form-control" id="pizza-size">
+        <option value="Personal">Personal</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+      </select>
+  </div>
+</div>
+</div>
+  <div class="container">
+    <h2>Select Your Toppings</h2>
+    <div class="row">
+      <div id="pick-toppings">
+        <input type="checkbox" name="toppings" value="Jalepeno">Jalepeno </input>
+        <input type="checkbox" name="toppings" value="Pineapple">Pineapple</input>
+        <input type="checkbox" name="toppings" value="Spicy Sausage">Spicy Sausage</input>
+        <input type="checkbox" name="toppings" value="Extra-Cheese">Extra Cheese</input>
+      </div>
     </div>
   </div>
+  <button type="submit" class="btn btn-success" id="button_id">Submit!</button>
+</form>
   <div class="container">
-    <div class="form-group">
-      <form id="order-form">
-            <h2>Select a Size</h2>
-            <label for="pizza-size">Pick Your Pie:</label>
-            <select class="form-control" id="pizza-size">
-              <option value="personal">Personal</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-            </select>
-          </div>
-        </div>
-      <div class="container">
-        <h2>Select Your Toppings</h2>
-        <div class="row">
-         <div id="pick-toppings">
-                <input type="checkbox" name="toppings" value="Jalepeno">Jalepeno</input>
-                <input type="checkbox" name="toppings" value="Pineapple">Pineapple</input>
-                <input type="checkbox" name="toppings" value="Spicy Sausage">Spicy Sausage</input>
-                <input type="checkbox" name="toppings" value="Extra-Cheese">Extra Cheese</input>
-            </div>
-          </div>
-        </div>
-              <div class="container">
-                <div id="your-order-details">
-                  <h6>All Set?</h6>
-                <span class="total-due"><h4>Your Order Total is:</h4></span>
-              </div>
-         </div>
-          <button class="submit" type="btn btn-success" id="button_id">Submit!</button>
-               </form>
-         <!-- <button class="submit" type="btn btn-success" id="button_id">Submit!</button> -->
-    </body>
+    <div id="your-order-details">
+      <h6>All Set?</h6>
+      <p>Your Total is:<span id="total-due"></span></p>
+    </div>
+  </div>
+</body>
 </html>
