@@ -25,7 +25,7 @@ Pizza.prototype.price = function(){ //prototype property
 }               //must name and call function as shown
                 // below in UI logic w var result = yourPizza.price();
 
-// //UI
+//UI
 $(document).ready(function() {
 
   $("form#order-form").submit(function() {
@@ -42,7 +42,6 @@ $(document).ready(function() {
     yourPizza.price(); //calling proto price function
       $("#total-due").show();
       $("#total-due").text(result); //result from var result
-
     });
   });
 });

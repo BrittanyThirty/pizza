@@ -17,36 +17,39 @@
       <li>Large | $37.50</li>
     </ul>
   </div>
-<div class="container">
-  <div class="form-group">
-    <form id="order-form">
-        <h2>Select a Size</h2>
-      <label for="pizza-size">Pick Your Pie:</label>
-      <div class="form-control" id="pizza-size">
-      <select class="form-control" id="pizza-size">
-        <option value="Personal">Personal</option>
-        <option value="Medium">Medium</option>
-        <option value="Large">Large</option>
-      </select>
-  </div>
-</div>
-</div>
   <div class="container">
-    <h2>Select Your Toppings</h2>
-    <div class="row">
-      <div id="pick-toppings">
-        <input type="checkbox" name="toppings" value="Jalepeno">Jalepeno </input>
-        <input type="checkbox" name="toppings" value="Pineapple">Pineapple</input>
-        <input type="checkbox" name="toppings" value="Spicy Sausage">Spicy Sausage</input>
-        <input type="checkbox" name="toppings" value="Extra-Cheese">Extra Cheese</input>
+    <div class="form-group">
+      <form id="order-form">
+        <h2>Select a Size</h2>
+        <label for="pizza-size">Pick Your Pie:</label>
+        <div class="form-control" id="pizza-size">
+          <select class="form-control" id="pizza-size">
+            <option value="Personal">Personal</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+          </select>
+        </div>
       </div>
     </div>
-  </div>
-  <button type="submit" class="btn btn-success" id="button_id">Submit!</button>
-</form>
+    <div class="container">
+      <h2>Select Your Toppings</h2>
+      <div class="row">
+        <div id="pick-toppings">
+          <input type="checkbox" name="toppings" value="Jalepeno">Jalepeno </input>
+          <input type="checkbox" name="toppings" value="Pineapple">Pineapple</input>
+          <input type="checkbox" name="toppings" value="Spicy Sausage">Spicy Sausage</input>
+          <input type="checkbox" name="toppings" value="Extra-Cheese">Extra Cheese</input>
+        </div>
+      </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-default active center-block" id="button_id">Submit!</button>
+  </form>
   <div class="container">
     <div id="your-order-details">
+      <br>
       <h6>All Set?</h6>
+      <br>
       <p>Your Total is:<span id="total-due"></span></p>
     </div>
   </div>

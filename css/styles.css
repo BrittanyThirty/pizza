@@ -5,8 +5,9 @@
 body {
   font-size: 14px;
   background-color: red;
-  /* backgroung-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background: size: cover; */
+}
+
+
+#pick-toppings {
+    text-align: center;
 }
